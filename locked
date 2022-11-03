@@ -1,0 +1,3 @@
+#!/bin/sh
+out=$(/usr/bin/env python3 -c 'import Quartz;print(Quartz.CGSessionCopyCurrentDictionary().get("CGSSessionScreenIsLocked"))')
+[ "$out" = "True" ] && /usr/bin/osascript -e "set volume 0"

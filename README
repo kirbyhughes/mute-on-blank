@@ -1,0 +1,12 @@
+# You need a working python, 2 or 3, in your path, and pip or pip3 with:
+# pip install pyobjc-framework-Quartz
+# or
+# pip install pyobjc (if you want all of pyObjC)
+
+# You need a screen session named "locked"
+screen -S locked
+
+# and then this crontab entry
+*/10 * * * * screen -S locked -p 0 -X stuff "/Users/khughes/dev/mute/locked^M"
+# make sure that is a carriage return at the end there
+
