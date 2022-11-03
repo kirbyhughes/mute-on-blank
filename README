@@ -11,7 +11,7 @@ You can do that with this python script along with using cron (which will probab
 # You need a screen session named "locked"
 screen -S locked
 
-# and then this crontab entry
-*/10 * * * * screen -S locked -p 0 -X stuff "/Users/khughes/dev/mute/locked^M"
+# and then this crontab entry (replace $USER with your username and make sure the path is correct)
+*/10 * * * * screen -S locked -p 0 -X stuff "/Users/$USER/dev/mute/locked^M"
 # make sure that is a carriage return at the end there
 
