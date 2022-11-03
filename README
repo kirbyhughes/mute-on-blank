@@ -1,7 +1,12 @@
-# You need a working python, 2 or 3, in your path, and pip or pip3 with:
-# pip install pyobjc-framework-Quartz
+macOS does not provide a way to mute the volume when the screen blanks after inactivity.
+
+You can do that with this python script along with using cron (which will probably be removed from macos someday).
+
+
+# You need a working python3, in your path, with:
+# pip3 install pyobjc-framework-Quartz
 # or
-# pip install pyobjc (if you want all of pyObjC)
+# pip3 install pyobjc (if you want all of pyObjC)
 
 # You need a screen session named "locked"
 screen -S locked
