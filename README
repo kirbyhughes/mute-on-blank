@@ -13,5 +13,5 @@ screen -S locked
 
 # and then this crontab entry (replace $USER with your username and make sure the path is correct)
 */10 * * * * screen -S locked -p 0 -X stuff "/Users/$USER/dev/mute/locked^M"
-# make sure that is a carriage return at the end there
+# make sure that ^M is a real carriage return at the end there, need to paste it in
 
